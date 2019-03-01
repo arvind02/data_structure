@@ -15,12 +15,12 @@ class ListNode
 end
 
 class Solution
-    # param a : head node of linked list
-    # param b : integer
-    # return the head node in the linked list
-    def rotateRight(a, b)
-        rotate_list(a, b)
-    end
+	# param a : head node of linked list
+  # param b : integer
+  # return the head node in the linked list
+  def rotateRight(a, b)
+  	rotate_list(a, b)
+  end
 end
 
 def rotate_list(head, n)
