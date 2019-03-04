@@ -21,20 +21,20 @@ class BinarySearchTree
         @root = TreeNode.new(val,nil,nil)   
     end
 
-    # Pre-Order Traversal
-    def preOrderTraversal(node= @root)
-        return if (node == nil)
-        preOrderTraversal(node.left)
-        preOrderTraversal(node.right)
-        puts node.value.to_s
-    end
-
     # Post-Order Traversal
-    def postOrderTraversal(node = @root)
+    def postOrderTraversal(node= @root)
         return if (node == nil)
-        puts node.value.to_s
         postOrderTraversal(node.left)
         postOrderTraversal(node.right)
+        puts node.value.to_s
+    end 
+
+    # Pre-Order Traversal
+    def preOrderTraversal(node = @root)
+        return if (node == nil)
+        puts node.value.to_s
+        preOrderTraversal(node.left)
+        preOrderTraversal(node.right)
     end
 
     # In-Order Traversal : Displays the final output in sorted order
